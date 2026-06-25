@@ -1,6 +1,6 @@
 workflows:
   ios-habit-tracker:
-    name: Arcana Oracle iOS # Замініть на вашу назву, це для умовного обозначення білду.
+    name: Pagebound iOS # Замініть на вашу назву, це для умовного обозначення білду.
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
@@ -17,8 +17,8 @@ workflows:
         bundle_identifier: com.arcana.oracle # Замініть на ваш фактичний bundle identifier
       vars:
         BUNDLE_ID: "com.arcana.oracle" # Замініть на ваш фактичний bundle identifier
-        XCODE_PROJECT: "Arcana Oracle.xcodeproj" # Замініть на ваш фактичну назву Xcode проекту
-        XCODE_SCHEME: "Arcana Oracle" # Замініть на ваш фактичну назву Xcode схеми
+        XCODE_PROJECT: "Pagebound.xcodeproj" # Замініть на ваш фактичну назву Xcode проекту
+        XCODE_SCHEME: "Pagebound" # Замініть на ваш фактичну назву Xcode схеми
       xcode: 26 # Тут треба актуальна версія xcode на момент збірки
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
